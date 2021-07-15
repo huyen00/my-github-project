@@ -1,0 +1,128 @@
+
+<!--
+    h1-h6 : heading : tiêu đề cho web
+    p - paragraph : đoạn văn
+    img - image: hình ảnh
+    a - anchor : thẻ liên kết
+    ul,li : danh sách
+    table :bảng (đầu bảng,body bảng)
+        <table>
+            <thead>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    input :
+        <input id = " a" type="radio"> : cùng id thì chỉ cho chọn 1 
+        <input type="checkbox"> : tạo ra dấu tích
+    button : 
+    div :khối
+    Attribute : là thuộc tính (style, title, onclick...) của thẻ HTML
+     sử dụng CSS in HTML có 3 cách :
+    1.Internal : sử dụng một cặp thẻ style trong chính file HMTL
+    2.External : tạo 1 file ở bên ngoài or link 1 nơi khác trên internet và sử dụng cặp thẻ link dẫn tới file css.
+    3.Inline : viết  trực tiếp các thuộc tính trong  thẻ của HTML
+    - so sánh ID với Class trong CSS
+    ID : thì sd # khi gọi
+    Class : thì sd dấu . khi gọi 
+    - Mức đọ ưu tiên khi sd css:
+    + internal, external : không có sự ưu tiên,được gọi trước thì sẽ chạy trước
+    + Inline : 1000
+    #id  : 100
+    .class : 10
+    tag : 1
+    + Equal specificity : sự giống nhau gữa cách mình gọi (cái nào mới hơn thì được ưu tiên)có thể gọi nhiều thẻ 1 lúc 
+    + Universal selector and inherited? (*là tất cả các thẻ  đc thừa hưởng giống hệt cái thuộc tính mà mình viết ): 0 điểm
+
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link href="test.js">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <style>
+         
+      </style>
+      
+    <div class = container style="background-color :white; margin-bottom : 50px" >
+        
+            <div class = "row">
+                <div class = "col-sm-4">
+                    <div class ="khoi">
+                     <img src="https://www.w3schools.com/bootstrap/newyork.jpg" alt="" >
+                    </div>
+                </div>
+                <div class = "col-sm-8">
+                    <div class ="k" >
+                        <div class = table-hover>
+                            <table class = "table">
+                                <thead>
+                                    <th>STT</th>
+                                    <th>Tên</th>
+                                    <th>Địa chỉ</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Huyền</td>
+                                        <td>Hà Nội</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Huyền</td>
+                                        <td>Hà Nội</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class ="jumbotron">
+                <h1 id = "ab">Hôm nay tôi nghỉ làm </h1>
+                <p>vì chị tôi khóa mất của nhà của tôi.rồi tôi như một tên trộm chèo khổ sở để lấy đcược chìa khóa mới mở được của</p>
+                
+            </div>
+            <div class="container" stype = "background-color:red">
+               
+                <p>hahahhahahahahahah</p>
+                <p>HiHihihihihihihihhhhhh</p>
+                
+            </div>
+            
+            <div class="container">
+                <h2>Well</h2>
+                <div class="well-sm">Basic Well</div>
+              </div>
+            
+            
+            
+            
+     </div>
+     <a href="" class="btn btn-success">Bấm vào</a>
+     
+      
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
